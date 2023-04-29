@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "aadee64a-93fe-427c-83dd-6eeaa2c17177",
+		"name": "tz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10876650"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "men's clothing",
+							"type": "text"
+						},
+						{
+							"key": "per_page",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}categories",
+					"host": [
+						"{{base_url}}categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "per_page",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}products",
+					"host": [
+						"{{base_url}}products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
